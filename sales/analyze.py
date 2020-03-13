@@ -8,11 +8,16 @@ from datetime import date
 
 class Data:
 	W = ['월', '화', '수', '목', '금', '토', '일']
+	D = dict()
 	def __init__(self, datestr):
 		self.date = date.fromisoformat(datestr)
 		
+	def add(item, count):
+		D[item] = count
+
 	def print(self):
 		print("Data (%s %s)"%(self.date, self.W[self.date.weekday()]))
+
 				
 for xlsf in glob.glob("data/*.xls"):
 	csvf = xlsf.replace(".xls", ".csv")
@@ -31,5 +36,5 @@ for csvf in glob.glob("data/*.csv"):
 				datestr = row[2].split(" ")[2]
 				data = Data(datestr)
 				data.print()
-				break
+			else:
 		                                
