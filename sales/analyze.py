@@ -51,3 +51,4 @@ for csvf in glob.glob("data/*.csv"):
 			elif (row[0].isnumeric() and int(row[0]) > 1):
 				print(row[2], row[4])
 				data.add(row[2], int(row[4].replace(',', '')))
+
