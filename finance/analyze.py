@@ -1,4 +1,4 @@
-#!/opt/anaconda3/bin/python3
+#!//bin/python3
 
 import pandas as pd
 import glob, os
