@@ -6,7 +6,7 @@ import csv
 import datetime
 from datetime import date
 
-class DataStore:
+class Database:
 	D = dict()
 	def __init__(self):
 			None
@@ -14,13 +14,13 @@ class DataStore:
 	def add(self, datestr, data):
 			self.D[datestr] = data
 
-class Data:
-	W = ['월', '화', '수', '목', '금', '토', '일']
-	D = dict()
-
-	def __init__(self, datestr):
+class Transaction:
+	def __init__(self, trstr):
 		self.datastr = datestr
 		self.date = date.fromisoformat(datestr)
+		self.sender = 
+		self.deposit = 
+		self.withdraw = 
 		
 	def add(self, item, count):
 		self.D[item] = count
@@ -29,7 +29,7 @@ class Data:
 		print("Data (%s %s)"%(self.date, self.W[self.date.weekday()]))
 
 				
-for xlsf in glob.glob("data/*.xls"):
+for xlsf in glob.glob("*.xls"):
 	csvf = xlsf.replace(".xls", ".csv")
 	if (os.path.exists(csvf)):
 		print(csvf)
@@ -40,15 +40,8 @@ for xlsf in glob.glob("data/*.xls"):
 
 datastore = DataStore()
 data = None
-for csvf in glob.glob("data/*.csv"):
+for csvf in glob.glob("*.csv"):
 	with open(csvf, 'r') as csvfile:
 		csvrd = csv.reader(csvfile, delimiter=',')
 		for row in csvrd:
-			if (row[0] == '0'):
-				datestr = row[2].split(" ")[2]
-				data = Data(datestr)
-				datastore.add(datestr, data)
-			elif (row[0].isnumeric() and int(row[0]) > 1):
-				print(row[2], row[4])
-				data.add(row[2], int(row[4].replace(',', '')))
-
+			print(row)
