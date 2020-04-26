@@ -1,0 +1,147 @@
+= 기초 정보 =
+== 주요 지수 ==
+* [[MSCI|https://www.msci.com]]: MSCI Indices
+* [[S&P|https://us.spindices.com/]]: S&P Indices (pass: J.!)
+* [[PMI|https://www.investopedia.com/terms/p/pmi.asp]]: ISM (Institute for Supply Management) 에서 매달 발표하는 제조업 지수;  New orders, inventory levels, production, supplier deliveries, and employment 의 다섯개 항목에 대한 설문 (400+개 회사) 에 기반, 동일가중치로 산출
+** 0부터 100까지의 수; 50 초과 -> expansion; 50 미만 -> contraction; 50 -> no change
+
+== 미국 시장 ==
+* '''DQYDJ'''
+** [[S&P 500 Return Calculator|https://dqydj.com/sp-500-return-calculator/]]
+** [[S&P 500 Periodic Reinvestment Calculator|https://dqydj.com/sp-500-periodic-reinvestment-calculator-dividends/]]
+** <u>[[10yr treasury return calculator|https://dqydj.com/treasury-return-calculator/]]</u>
+* <u>[[US inflation rate|http://www.in2013dollars.com/inflation-rate-in-2018]]</u>
+* [[Investment calculator|https://www.calculator.net/investment-calculator.html]]
+* Historical 주식/채권/금리 자료: [[https://www.multpl.com/s-p-500-historical-prices]]
+* <u>'''[[Portfolio Visualizer|https://www.portfoliovisualizer.com]]'''</u>
+* [[TED Spread|https://fred.stlouisfed.org/series/TEDRATE]]: LIBOR rate 와 T-bill rate 금리차; common measure of credit risk in bank sector
+
+=== ETF Ranking ===
+* [[US News Best Funds/ETFs Ranking|https://money.usnews.com/funds/search?category=long-term-bond&etfs=true]]
+
+=== SPDR ===
+* [[SPRD Sector ETFs|http://www.sectorspdr.com/sectorspdr/?utm_source=investors&utm_medium=dailysectorupdate&utm_campaign=maincampaign]]
+
+=== Vanguard ===
+* [[Top commission-Free ETFs on Vanguard|https://etfdb.com/type/commission-free/vanguard/#etfs&sort_name=ytd_percent_return&sort_order=desc&page=1]]
+** [[PDF list of all commission-free ETFs|https://personal.vanguard.com/pdf/etfcfl.pdf]]
+* '''<u>[[Compare Funds|https://advisors.vanguard.com/web/c1/compare-products/]]</u>'''
+
+
+* '''Fidelity''':
+** [[Stock Market|https://eresearch.fidelity.com/eresearch/landing.jhtml]]
+** 섹터: [[Stock Market Sector Performance|https://eresearch.fidelity.com/eresearch/goto/markets_sectors/landing.jhtml]]
+** [[Top Sector ETFs|https://money.usnews.com/funds/etfs/sector]]
+** <u>[[Compare Mutual Funds|https://www.fidelity.com/fund-screener/compare.shtml]]</u>
+
+* '''Schwab''':
+** <u>[[Compare ETFs|https://www.schwab.com/public/schwab/investing/investment_help/investment_research/etf_research/etfs.html?&&path=%2FProspect%2FResearch%2Fetfs%2Foverview%2Fcompare.asp%3Fsymbol%3DQQQ]]</u>
+
+== 한국 시장 ==
+* '''금감원 DART 전자공시 시스템''': [[http://dart.fss.or.kr]]: 기업들이 공시하는 공식 정보 제공; 비상장된 기업정보까지 올라옴; 각 회사별 실적보고서, 주요 주주 주식현황, etc.
+* 한국거래소: KIND 전자공시 시스템: [[http://kind.krx.co.kr]]; [[KRX|http://krx.co.kr]]
+* 주식 세금: [[http://biz.chosun.com/site/data/html_dir/2018/02/11/2018021101792.html]]
+* 금융포털 파인: [[http://fine.fss.or.kr/main/index.jsp]]
+** 모든 공인금융회사는 파인에 등록되어 있음; 금융사기 판별시 사용
+* 나이스 평가정보: [[http://niceinfo.co.kr]]
+* 네이버 ETF 정보: [[https://finance.naver.com/sise/etf.nhn]]
+
+
+
+== Sectors ==
+* 섹터: [[Stock Market Sector Performance|https://eresearch.fidelity.com/eresearch/goto/markets_sectors/landing.jhtml]]
+* [[Top Sector ETFs|https://money.usnews.com/funds/etfs/sector]]
+
+* Technology:
+** <u>[[DXI Index|https://www.dramexchange.com/Market/market_activity]]</u>: DRAM 가격 지표
+*** [[IT 관련주와 상관관계가 있음|http://biz.chosun.com/site/data/html_dir/2010/07/29/2010072900239.html]]
+* Health Care:
+
+* Financials:
+* Materials:
+* Consumer Discretionary:
+* Consumer Staples:
+* Industrials:
+* Telecom:
+* Real Estate:
+* Energy:
+* Utilities:
+
+
+= 경제정보 =
+== 미국 ==
+* [[NY Fed|https://www.newyorkfed.org/research]]
+** <u>'''[[US Economy in a Snapshot|https://www.newyorkfed.org/research/snapshot]]'''</u>
+
+= Risk Management =
+== Recession Detection ==
+* FRB New York의 RPM (Recession Probabailty Model): (see [[]Liz Sonders' Recession Watch|https://www.schwab.com/resource-center/insights/content/recession-watch-or-distant-early-warning]])
+
+== Market Volatility ==
+* [[Vanguard on Market Volatility|https://investor.vanguard.com/investing/market-volatility]]: Oct 2019
+* [[Schwab on Market Volatility|https://www.schwab.com/resource-center/insights/content/volatile-markets-heres-what-you-should-know]]: Oct 2019
+** [[7 Trading Strategies for Volatile Markets|https://www.schwab.com/resource-center/insights/content/7-trading-strategies-volatile-markets]]
+
+
+= 투자 =
+== 투자 가이드 ==
+* <u>Ray Dalio: [[Paradigm Shifts|https://economicprinciples.org/downloads/Paradigm-Shifts.pdf]]</u>
+* <u>[[Howard Marks' Memo|https://www.oaktreecapital.com/insights/howard-marks-memos]]</u>
+* [[Liz Sonders (Charles Schwab)|https://www.schwab.com/resource-center/insights/author/liz-ann-sonders]]
+* [[개리 안토나치 (Optimal Momentum)| http://www.optimalmomentum.com/]] 
+* <u>[[ESI Money|https://esimoney.com/millionaire-interview-140/]]</u>: 백만장자 인터뷰 시리즈
+
+
+== 국내 투자 가이드 ==
+* [[이성수 다음카페 | http://cafe.daum.net/wealthM]]: [[블로그| http://deathornot.tistory.com/2661]], [[Youtube|https://www.youtube.com/user/lovefundvalue]]
+* [[퀀트킹|http://cafe.naver.com/quantking]]
+* [[systrader79의 주식투자|https://stock79.tistory.com/]]
+** [[네이버 카페: 실전 주식 투자 연구소|https://cafe.naver.com/invest79]]
+
+== 포트폴리오 구성 ==
+* '''[[번스타인, 스웬슨, 브라운, 스웨드로 비교|https://www.wealthmanagement.com/equities/bernstein-swensen-browne-or-swedroe]]'''
+* RandomWalk book 참고
+* [[뱅가드 포트폴리오 모형 통계|https://personal.vanguard.com/us/insights/saving-investing/model-portfolio-allocations]]
+
+= 투자 종류 =
+== Bonds ==
+* [[treasurydirect|https://www.treasurydirect.gov/]]
+* [[Bond's price vs interest rates|https://www.accountingcoach.com/blog/bonds-price-interest-rates]]
+
+== ETF ==
+* [[Tax in ETFs|https://www.schwab.com/active-trader/insights/content/etfs-and-taxes-what-you-need-to-know]]
+* [[Vanguard ETF/MutualFund LIST|https://investor.vanguard.com/mutual-funds/list#/mutual-funds/asset-class/month-end-returns]]
+* [[World’s Biggest Pension Fund Wants to Stop Index Trackers Eating the Economy|https://www.wsj.com/articles/worlds-biggest-pension-fund-wants-to-stop-index-trackers-eating-the-economy-1502974668?mod=article_inline]]
+* [[How ETFs Swallowed the Stock Market|https://www.wsj.com/articles/how-etfs-swallowed-the-stock-market-11567162801]]
+* [[What's in Your Index Fund?|https://www.nytimes.com/2019/02/18/opinion/index-fund.html]]
+* [[The Big Short’s Michael Burry Sees a Bubble in Passive Investing|https://www.bloomberg.com/news/articles/2019-08-28/the-big-short-s-michael-burry-sees-a-bubble-in-passive-investing]]
+* [[Why Passive Investing Isn’t a Panacea|https://www.alliancebernstein.com/library/why-passive-investing-isnt-a-panacea.htm?seg=18]]
+* [[James Ledbetter (New Yorker): Is Passive Investment Actually Hurting the Economy?|https://www.newyorker.com/business/currency/is-passive-investment-actively-hurting-the-economy]]
+* [[Burton Malkiel (WSJ): Is Indexing Worse than Marxism?|https://www.wsj.com/articles/is-indexing-worse-than-marxism-1479857852]]
+* Search "ETF Meltdown" regarding 20% drop in late 2018 (during 3mos)
+* [[Another Burry article|https://www.npr.org/sections/money/2019/10/08/767884839/is-your-retirement-fund-ruining-our-economy]]
+
+== Real Estate ==
+* [[내 돈 충분한데…왜 대출받아 투자하죠?|http://realty.chosun.com/site/data/html_dir/2018/11/28/2018112801140.html]]
+** '''투자 이익이 6.3%이 보장되는데 반해서 대출 금리가 3%라 하자.''' 그렇다면 적당한 돈을 대출받으면 그 받은 돈으로 6.3%만큼의 이득을 내도록 할수 있다. 따라서 대출은 이익이 된다. 어느정도 대출을 받아야 하는지는 계산해볼것
+
+== 보험 ==
+* 보장, 저축, 돈 세탁, 상속/증여 등의 기능을 함
+* 부의 축적보다는 리스크 헤지 또는 부의 유지를 위한 수단
+
+= 투자 기법 =
+* [[Best ETF trading strategies|https://www.investopedia.com/articles/investing/090115/7-best-etf-trading-strategies-beginners.asp?utm_source=personalized&utm_campaign=bouncex&utm_term=17917809&utm_medium=email]]
+== Dollar-Cost Averaging ==
+== Tax Loss Harvesting == 
+* [[Tax loss harvesting|https://www.thebalance.com/tax-loss-harvesting-2466541]]
+== Rebalancing ==
+* Tax saving을 위해서는 파는 것보다, 새로운 cash를 투입해서 부족분을 새로 구입해서 비율을 맞추는 것이 더 낫다.
+== Smart Beta ==
+== Contrarian Investing ==
+== Asset Allocation ==
+== Swing Trading ==
+== Sector Rotation ==
+== Betting on Seasonal Trends ==
+== Hedging ==
+== VIX Trading ==
+* [[VIX Trading Tools|https://www.nasdaq.com/article/vix-trading-tools-cm666772]]
