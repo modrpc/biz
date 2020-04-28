@@ -1,0 +1,145 @@
+= Basics =
+
+== 기초 지식 ==
+* [[Fidelity: Bond Prices, Rates, and Yields|https://www.fidelity.com/learning-center/investment-products/fixed-income-bonds/bond-prices-rates-yields]]
+* [[Investopedia: Bond Yield|https://www.investopedia.com/terms/b/bond-yield.asp]]
+
+== Bond Types ==
+* [[Types of bonds|https://www.finra.org/investors/types-bonds]]
+** '''[[U.S. Treasury Securities|https://www.finra.org/investors/us-treasury-securities]]''' (T-bills, T-notes, T-bonds): U.S. Treasury securities ("Treasuries") are issued by the federal government and are considered to be among the safest investments you can make, because all Treasury securities are backed by the "full faith and credit" of the U.S. government
+
+** '''[[U.S. Savings Bonds|https://www.finra.org/investors/us-savings-bonds]]''': Savings bonds are issued by the federal government and may be purchased for an investment as low as $25
+
+** '''[[TIPS and STRIPS|https://www.finra.org/investors/tips-and-strips]]''': TIPS shelter you from inflation risk because their principal is adjusted semiannually based on changes in the Consumer Price Index-Urban Consumers, a widely used measure of inflation. STRIPS are a different type of Treasury bond that let investors hold and trade the individual interest and principal components of eligible Treasury notes and bonds as separate securities. 
+
+** '''[[Mortgage-Backed Securities (MBS)|https://www.finra.org/investors/mortgage-backed-securities]]''': secured by home and other real estate loans; they are created when a number of these loans, usually with similar characteristics, are pooled together. 
+
+** '''[[Agency Securities|https://www.finra.org/investors/agency-securities]]''': "Agencies" is a term used to describe bonds issued or guaranteed by U.S. federal government agencies and bonds issued by government-sponsored enterprises (GSEs)—corporations created by Congress to foster a public purpose.
+
+** '''[[Municipal Bonds|https://www.finra.org/investors/municipal-bonds]]''': Municipal securities, or "munis," are bonds issued by states, cities, counties and other governmental entities to raise money to build roads, schools and a host of other projects for the public good.
+
+** '''[[Corporate Bonds|https://www.finra.org/investors/corporate-bonds]]''': Companies issue corporate bonds to raise money for capital expenditures, operations and acquisitions. Corporate bonds are issued by all types of businesses, and are segmented into major industry groups.
+
+** '''[[International and Emerging Markets Bonds|https://www.finra.org/investors/international-and-emerging-markets-bonds]]''': These are bonds issued by foreign governments and companies. Since interest rate movements may differ from country to country, international bonds are another way to diversify your portfolio, but carry their own set of risks. 
+
+== Bond Rates 정보 ==
+* [[TreasuryDirect.gov|https://www.treasurydirect.gov]]
+** [[Daily treasury yield curve rates|https://www.treasury.gov/resource-center/data-chart-center/interest-rates/pages/TextView.aspx?data=yieldYear&year=2018]]
+* [[Bloomberg Bond Rates|https://www.bloomberg.com/markets/rates-bonds]]
+
+== US Inflation 정보 ==
+* [[https://tradingeconomics.com/united-states/inflation-cpi]]
+
+= Bond Investing =
+== 채권이 바람직한지 판단하는 법 ==
+=== 단계 1: 채권 기본 정보 파악 ===
+====  Face value 확인 ====
+* aka '''par value''' (or '''principal''')
+* face value가 $1000 이라고 반드시 $1000 에 팔리지는 않는다 (더 비싸게도 더 싸게도 팔린다)
+** $1000 불 초과 가격에 팔리면 '''premium bond''' 라고 한다
+** $1000 불 미만 가격에 팔리면 '''discount bond''' 라고 한다
+*** 디스카운트의 이유는  1) 다른 본드에 비해서 interest rate가 작은 경우; 2) bond issuer가 default할 가능성이 커지는 경우
+*** 따라서 디스카운트 했다고 반드시 좋은 채권은 아니라는 뜻
+
+====  Coupon rate 확인 ====
+* '''coupon rate''': bond issuer가 bondholder (creditor) 에게 pay하기로 합의한 interest rate
+* coupon rate는 바뀌지 않는다 (따라서 bond를 fixed-income investment라 부름)
+* 5% coupon rate인 경우, 1년에 $50이 이자인데, 일반적으로 6개월마다 $25불씩 pay된다
+
+==== Sale price 확인 ====
+* prevailing interest rate가 bond issue 시점보다 떨어지는 경우, bond는 premium bond 값으로 팔린다
+** bond가 6% 이자인데, 시중금리가 4%가 되면 bond의 가치가 높아진다.
+** 시중금리가 더 높아지만 bond의 가치가 떨어지고, discount bond가 된다.  '''왜냐하면, 투자자는 지금 bond를 팔고, 현시점의 시중금리 값으로 팔리는 "latest bond"를 사면 되기 때문'''
+
+* On a scale of 100
+** if a bond is selling at '''par''' (Face value); it's quoted as '''selling at 100'''
+** if a bond is selling at 95, it means it's a discount bond with sale price $950
+** if a bond is selling at 105, it's a premium bond with sale price $1050
+
+
+=== 단계 2: 채권 상세 정보 파악 ===
+
+==== Ratings: Quality vs junk bond 가려내기 ====
+* Moody's, S&P, Fitch Ratings are bond-rating companies
+
+==== Insurance ====
+* 어떤 채권은 insured
+** municipal bond market에서 더 흔함
+* 즉, 채권이 매력을 높이기 위해 시에서 보험회사에 채권에 대해 보험을 듬
+* insured bond는 더 안전한 만큼 더 낮은 coupon rate를 가질 가능성이 큼
+* insured bond의 경우 insurance company의 health도 검사해봐야 함
+* 이런 배경 검사가 힘들면 그냥 fund나 ETF를 살것
+
+==== Maturity 확인 ====
+* maturity 가 길수록 interest rate가 높다
+
+==== Callability 확인 ====
+* callable bond는 issuer에 의해 maturity 이전에 retire/redeem 될수 있다
+* bond는 일반적으로 interet rate가 떨어질 때 retire되므로 (즉, bond issue입장에서는 시중 금리보다 더 높은 금리를 쳐주고 싶지 않음), retirement는 투자자 입장에서 좋은 것이 아님
+* 따라서, callable bond는 투자자를 끌어들이기 위해서 높은 coupon rate를 줌
+
+==== Tax 확인 ====
+* treasury bond에 투자할 경우, interest에 대한 state/local tax가 없음
+* municipal bond의 경우, federal tax는 없음
+
+=== 단계 3: 주변 경제 정보 파악 ===
+==== Prevailing interest rate 확인 ====
+* <u>'''시중금리가 올라가면 채권가격은 내려간다'''</u> 또는 그 반대
+
+==== Inflation rate 확인 ====
+* inflation: indication of how hot the economy is
+** high inflation means
+*** high employment, expanding companies
+*** more need for capital -- high demand for borrowing => '''interest rate raised''' => '''bond price lowered'''
+** high inflation is bad for bond holders
+
+== Yield 의 이해 ==
+=== Coupon yield ===
+* coupon yield = Coupon rate
+* for bond funds, it can instead have average coupon yield for all the bonds in the pool
+
+=== Current yield ===
+* derived by taking the bond's coupon yield and dividing it by the bond's price
+* yield/current-price
+** may be different from coupon yield since '''current price may be different from face price'''
+* 본드를 샀을 경우, 앞으로 몇 달간 발생시킬 income에 대한 추정을 가능케함
+* 즉, 임시적인 값으로서 이 값은 bond current price의 변동에 따라 변할수 있음; current price 변동이 잦을 경우, 예측력이 떨어짐 
+** it's like measuring today's rainfall and multiply it by 30 to get next-month rainfall estimate
+
+=== Yield-to-maturity ===
+* interest payment를 매 6개월당 받아서 동일한 현재 interest rate로 reinvest한다고 했을때, maurity에서 얻는 yield
+* calculator: [[http://www.moneychimp.com]]
+
+=== Yield-to-call ===
+* callable bond의 경우, yield-to-maturity는 사실 큰 의미가 없다.
+** issuer가 만약 market interest rate가 낮아지면, call해버리기 때문에
+
+=== Worst-case basis yield ===
+* callable bond가 최악의 경우에 call한다고 가정했을 때의 yield
+
+=== 30-day SEC yield ===
+* bond 별로 꽁수로 잘못된 yield를 제공하는 것을 막기 위해 SEC에서 정한 률에 따라 계산
+
+== Total Return의 계산 ==
+
+
+
+= 채권 종류 =
+
+== 미국 국채 (Treasury Bonds) ==
+* government goes to debt market to either raise funds for operations or refinance the outstanding debt
+** '''treasury bonds''': 10년 만기 (US10Y); 30년 만기 (US30Y) 도 2006년 다시 생김
+** '''treasury notes''': generally from two-to-ten years in duration
+** '''treasury bills (T-bills)''': much-shorter bonds, usually measured in weeks; 13주 또는 26주 
+* 미국국채는 다른 채권의 가격을 결정하는 "benchmark"로 사용됨
+* 만기가 되면, 원금 + fixed interest rate (aka '''coupon''') 을 돌려줌
+* 고정금리 (e.g. 4%), 만약 10년간 inflation보다 고정금리가 작으면 손해
+** 주식 투자는 profit이 중요하지만, 채권 투자는 inflation이 중요함
+* '''금리가 올라가면 채권 가격이 떨어지는 이유'''
+** 현재 zero-coupon의 bond가 $950에 팔리고, 1년후 maturity가 되면 $1000을 받는다고 하자.
+** 내가 지금 이 bond를 산다면 5.26% return ((1000-950)/950) 임
+** 하지만, 금리가 올라서 새로 issue되는 bond가 10% yield를 내준다고 하자. 그렇다면 기존 5.26% yield bond는 가치가 떨어진다 (다들 새로운 10% yield bond를 원함).  따라서, 기존 bond는  new bond에 맞추기 위해서 채권가격이 $909.09 (10% yield)로 떨어진다. 
+*** 기존 bond는 물론 더 빨리 만기가 된다는 잇점이 있다. 따라서 더 복잡한 계산이 필요할듯
+
+== 전환사채 (Convertible Bonds) ==
+* 전환사채(轉換社債, 영어: convertible bond, CB)는 ‘주식으로 전환할 수 있는 권리’, ‘주식으로의 전환권이 인정되는 사채’를 말한다

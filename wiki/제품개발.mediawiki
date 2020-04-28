@@ -1,0 +1,134 @@
+= 기초 지식 =
+* [[카페 베이커리 페어|http://www.cafenbakeryfair.com/]]
+* [[pâtisserie, boulangerie & viennoiserie?|https://www.cordonbleu.edu/news/what-are-patisserie-boulangerie-viennoiserie/en]]
+** [[List of pastries|https://en.wikipedia.org/wiki/List_of_pastries]]
+
+== 제빵 ==
+* [[제빵 기초지식]]
+** [[동양식 빵이 서양식 빵보다 부드러운 이유|https://guide.michelin.co.kr/ko/2298/%EB%8F%99%EC%96%91%EC%8B%9D-%EB%B9%B5%EC%9D%B4-%EC%84%9C%EC%96%91%EC%8B%9D-%EB%B9%B5%EB%B3%B4%EB%8B%A4-%EB%B6%80%EB%93%9C%EB%9F%AC%EC%9A%B4-%EC%9D%B4%EC%9C%A0%EB%8A%94/]]
+
+* Reverse Engineering: 푸드 스캐너, 음식 성분 분석기
+** SCIO: [https://www.consumerphysics.com/myscio/order]
+
+== 제과 ==
+* [[제과 기초지식]]
+
+== 샌드위치 ==
+* [[샌드위치 기초지식]]
+
+== 디저트 ==
+* [[카페 창업 디저트 통계자료|https://catchmind-10.tistory.com/128]]
+
+== 커피 ==
+* [[커피|커피 기초지식]]
+* 커피 원가 계산: [[커피원가1|https://wangca8.tistory.com/49]], [[커피원가2|https://brunch.co.kr/@adbada/95]], [[커피원가3|https://brunch.co.kr/@adbada/96]], [[직접 로스팅 비용|https://gundek.tistory.com/entry/카페에서-로스팅을-직접-한다면-얼마나-더-절약을-할-수-있을까]]
+
+= 제품 라인업 =
+== 기존 제품 ==
+* 크림바게트, 새우바게트, 치즈 타르트, 기본 빵
+** 크림/새우바게트는 호일에 싸지말고 기름종이에 (햄버거 포장지 같은)
+** 새우포보이: [[Shrimp Po'Boy|https://www.bonappetit.com/recipe/shrimp-po-boy]]
+** do google search
+** 작은 새우 (칵테일새우) 를 튀기지 말고, creole mayo에 버무린 버전
+** 무안 양파를 작게 다져서 넣든지, 아니면 작은 것을 (fried shallot style) 튀긴 버전을 넣든지
+** Top Chef: Po' Boy Smackdown episode 볼것;  Youtube 참고
+** [[샌드위치빵 선택|https://www.insider.com/best-sandwich-bread-2018-9#the-textural-contrast-of-new-orleans-french-bread-makes-it-a-great-pick-for-grilled-cheese-5]]
+
+* Variations
+** 버터스카치 캔디 풍미 (파우더?)
+** 양파크림치즈 바게트
+** 명란 바게트
+
+
+=== 기존 제품 개선 === 
+* 식빵 (홋카이도 우유식빵)
+* 빵 texture를 85C 처럼 (<u>'''대만 쫄깃한 식감'''</u>)
+** [[http://carolynjphillips.blogspot.com/2017/01/a-chewy-take-on-taiwanese-classic-bread.html]]
+** [[Leaning from the prince of bread|https://www.star2.com/food/food-news/2017/08/09/taiwan-bread-prince/]]
+** [[How to make Bakery-style super soft chewy dinner rolls|https://www.youtube.com/watch?v=3mgKSP79wKg]]
+** [[Baking Taiwanese style bread|http://yohanagourmet.blogspot.com/2007/01/baking-taiwanese-style-bread.html]]
+* 새우바게트: 와사비 추가?
+* 소보로를 약간 작게 만드는 것: 겉의 crust양이 상대적으로 많아져서 더 맛있게 느낄수 있음
+** 내부에는 크림, 커스터드 등 다양한 속재료
+
+== 신제품 ==
+* 카스타드빵: [[크림빵 참고|https://blog.naver.com/loveyosi83/220695756281]]; [[중국식 카스타드 (nai wong bao)|https://thewoksoflife.com/2016/09/nai-wong-bao-custard-buns/]] 또는 beard papa류의 카스타드
+** 대만의 85C 빵은 단맛이 강함 (소금을 넣을 가능성도 있음)
+* 딤섬집 디저트류
+* 파인애플빵 ([[보로바우|https://ko.wikipedia.org/wiki/%EB%B3%B4%EB%A1%9C%EB%B0%94%EC%9A%B0]])
+** 반으로 가른 후, 중국식 커스타드, 생크림, 앙금, 잼 중 하나
+* 타로마블빵, 카레빵? 고기빵 (횡성 한우빵; 대한항공 불고기빵; 뉴질랜드 고기파이)
+** 타로는 국내 생산자 물색: [[곡성 취송농원|http://chwisongwon.cafe24.com/]]
+* 팔미에르 ([[Sugar Bowl Bakery|https://sugarbowlbakery.com/]]): Hayward super bowl bakery 검색
+* 파스타 빵: 야끼소바 빵의 변형
+* 양파빵
+* 무화과 빵
+* 기타:
+* [[Pandan|http://runawayrice.com/desserts/pandan-waffles-banh-kep-la-dua/]]: Tapioca 가루가 빵에 찰기를 주지 않는지 실험해볼것 (85C)
+** [[Crispy Fried Shallots 응용|https://www.google.com/search?q=crispy+shallots&safe=off&tbm=isch&source=iu&ictx=1&fir=Ot3Y0FdWwpF2yM%253A%252CuQN_2GkV1y954M%252C_&vet=1&usg=AI4_-kSR1APcmFRLZx21eLigYGmDNTe7fA&sa=X&ved=2ahUKEwj-paew7c3hAhUmwFQKHd5nCLgQ9QEwAHoECAwQBg#imgrc=Ot3Y0FdWwpF2yM:&vet=1]]: 베트남 pho나 bowl에 들어가는 양파 튀김
+* [[종이컵 쉬폰 케이크|https://www.instagram.com/explore/tags/%E7%B4%99%E3%82%B3%E3%83%83%E3%83%97%E3%82%B7%E3%83%95%E3%82%A9%E3%83%B3%E3%82%B1%E3%83%BC%E3%82%AD/]]
+* [[85 Bakery: Milk Buffer Custard Puff|https://www.85cbakerycafe.com/menu/milk-butter-puff-pastry/]]:
+** 부드러운 식감; Copy this!
+** [[http://theabcchef.com/2015/08/nai-su-mian-bao-milk-butter-bun.html]]
+* a light and flaky bread with sweet milk butter filling.
+* Egg, Milk, Soy, Tree Nuts, Wheat (Topping with almond slices)⠀
+* "Puff Pastry"를 빵에 접목한 것으로 보임
+
+== 전문가 초청 ==
+* [[집에서 프로처럼 빵을 굽자|https://blog.naver.com/prologue/PrologueList.nhn?blogId=ibluehee]] ([[인스타|https://www.instagram.com/inblue_boulanger/?hl=ko])
+
+== 버터를 이용한 빵 ==
+* [[소보로 앙버터|http://gasengi.com/main/board.php?bo_table=humor04&wr_id=163759]]
+* 단단한 버터에 설탕가루가 씹힐정도로 섞이면 식감이 좋음
+
+== 누가를 이용한 빵 ==
+
+== 블루베리 잼 ==
+* 건강에 좋은 느낌
+* 코스코 블루베리잼 참고
+* 재료 조달이 관건
+
+== 기타 새로운 재료를 이용 ==
+=== Nutmeg ===
+=== Basil ===
+* Le Cordon Blue - Professional Baking 참고
+** Allspice, Anise, Caraway, Cardamom, Cinnamon, Mace, Poppy seeds, etc.
+
+== 제빵 신기술 ==
+* 빵을 신선하게 계속 나오도록 굽는 기법 연구
+** 주문받고 만드는 것은 가능한지?
+** 아니면 on-demand version과 regular sales version
+* 자동화 기술: 계란 자동으로 까는 기계, 기타 등등
+* 어떻게 빵을 신선하게/따뜻하게 유지할수 있는지
+* '''공장인력 2-3명 데리고 서울/일본/대만 견학'''
+
+== 제품 개선사항 ==
+* 잘 정수된 물을 사용할 것: TDS water tester로 PPM 확인
+* 질좋은 재료를 사용할 것
+* '''몸에 나쁘지 않은 재료 사용''': 마가린 금지, 설탕 대체재
+
+= 2층 카페 =
+== 샌드위치 ==
+* 파니니 
+* Basil을 이용
+* [[강남 봉은사역 마마스 샌드위치|https://ameblo.jp/hiraokadolu/entry-12331978492.html?frm=theme]]
+* '''Fried Shalot'''을 추가
+* Google-search "How to Make Panera Sandwiches"
+* PF Chang Mongolian Beef를 추가한 샐러드
+* 치즈 스테이크 샌드위치
+
+== 케익 ==
+* 커피에 어울리는 케익 조사
+* [[Trader Joe Pancake Bread|https://www.tablefortwoblog.com/trader-joes-pancake-bread-copycat-recipe/]]
+
+
+== 커피 ==
+* 아메리카노, 라떼, 카푸치노, 카라멜 마키아토 
+* Philz 모히토 커피
+* 파미에 스테이션 커피
+
+== 빙수/아이스바 ==
+* Ice Popsicle: Google 검색해서 아이디어 얻을것
+** 나무 막대에 인두로 "로고" 넣을것: <u>'''popsicle stick logo'''로 구글검색</u>
+** "누가" 조각
+

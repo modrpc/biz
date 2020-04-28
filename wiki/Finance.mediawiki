@@ -1,0 +1,27 @@
+{| class="wikitable"
+!colspan="2" | 사업
+|-
+| style="text-align:right;" | 회계
+| [[사업기초]],  '''[[세금]]''', '''[[회계]]''' ([[나무위키 | https://namu.wiki/w/%ED%9A%8C%EA%B3%84%ED%95%99]], [[위키 | https://ko.wikipedia.org/wiki/%ED%9A%8C%EA%B3%84]], [[창업회계학교 | https://brunch.co.kr/magazine/account]], [[전산세무회계|https://namu.wiki/w/%EC%A0%84%EC%82%B0%EC%84%B8%EB%AC%B4%ED%9A%8C%EA%B3%84]]), '''[[ :factory: |https://github.com/modrpc/info/wiki]]'''
+|-
+| style="text-align:right;" | 경영
+| '''[[경영]]''', [[가이드]], [[사업계획]], [[마케팅]], [[벤치마킹]], [[커피]], [[건물]]
+|-
+!colspan="2" | 투자
+|- 
+| style="text-align:right;" | 기초
+| [[기초수학]], [[경제기초]], '''[[재무기초]]''', [[투자기초]]
+|-
+| style="text-align:right;" | 투자 
+| '''[[주식]]''' ([[옵션]], [[스왑]], [[선물]], '''[[Quant]]''', <u>[[qbits]]</u>), [[채권]], [[부동산]]
+|-
+!colspan="2" | 기타
+|-
+| style="text-align:right;" | 생활
+| '''[[미국]]''', [[음식]], [[건강]], [[음악]], [[일본어]], [[여행]], [[항해]], [[Stuffs]]
+|- 
+| style="text-align:right;" | 기타
+| [[국가통계포털| http://www.kosis.kr]] ([[100대 지표|http://ecos.bok.or.kr/jsp/vis/keystat/#/key]]), '''[[서식]]''',
+[[학술정보서비스| http://www.riss.kr]]
+|}
+

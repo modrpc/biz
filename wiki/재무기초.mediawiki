@@ -1,0 +1,139 @@
+= 대차대조표 (Balance Sheets) =
+* aka [[재무상태표|https://ko.wikipedia.org/wiki/%EC%9E%AC%EB%AC%B4%EC%83%81%ED%83%9C%ED%91%9C]] ([[Statement of Financial Position|https://www.investopedia.com/terms/b/balancesheet.asp]])
+* 세개의 항목을 기술: <u>자산 (assets) = 부채 (liability) + 자본 (equity)</u>
+** "부채/자본"은 회사가 자본을 어떻게 조달하는지를 알려줌
+** "자산"은 회사 그 자체
+
+== 자산 (Assets) ==
+=== 유동자산 (Current Assets) ===
+* 현금 (Cash)
+* (Accounts Receivable)
+* 재고 (Inventories)
+* 기태 유동자산 (Other current assets)
+
+=== 비유동자산 (Noncurrent Assets) ===
+* (Property, plant & Equipment; PP&E) 
+* (Intangibles and other assets)
+
+== 부채 (Liabilities) ==
+
+== 자본 (Shareholders' quity) ==
+* [[나무위키|https://namu.wiki/w/%EC%9E%90%EB%B3%B8]]: 기업의 부를 이루고 있는 자산 중 주주에게 귀속되는 몫; 즉, 기업이 주주로부터 조달한 금액
+** [[Equity|https://www.investopedia.com/terms/e/equity.asp]] = Assets - Liability
+
+* 자본총계 = 자본금 + 자본잉여금 + 이익잉여금 + 그 외 다수 항목
+** 자본금: 회사의 근본적인 자금 = 주식액면가 * 총주식수
+** 자본잉여금: 주식발행 후 자본금을 초과한 잉여금
+** 이익잉여금: 회사가 경영하면서 쌓아온 이익금의 합
+
+=== 증자 ===
+* [[나무위키|https://namu.wiki/w/%EC%A6%9D%EC%9E%90(%EA%B2%BD%EC%A0%9C)]]
+* 증자: 기업이 일정 금액의 자본을 증가시키는 행위
+** 방법1: 타인에게서 자금을 빌려오는 차입  ('''부채'''로 표시)
+** 방법2: 주식을 발행해서 회사의 일정부분의 권리를 주고 투자를 받는 방식 ('''자본'''으로 표시)
+
+* '''유상증자''': 신주발행이 실질적인 자산의 증가로 연결
+** Paid-in capital increase or seasoned equity offering (SEO)
+** 자본금을 늘릴때 (즉, 주식을 늘릴때), 현금이나 이에 상당하는 현물 (토지, 건물 등) 을 받고 증자하는 것
+** 재무상태표의 자산이 증가하기 때문에 실질적 증자라고 표현
+
+* '''무상증자''': 실질자산 증가 없이 주식자본만 늘어남
+** Bonus Issue
+** 형식적 증자라고 불린다
+
+=== 감자 ===
+
+
+
+= 손익계산서 (Income Statements) =
+
+= Financial Ratios =
+* Financial ratio를 통해, 회사가 재정적으로 어떻게 잘 해나가고 있는지의 판단이 가능하다. 개개의 숫자 하나로는 특별한 의미를 찾을수 없음
+** 회사가 profit을 내고 있는가?
+** 회사가 얼마나 효율적이고 생산적으로 운영되고 있는가?
+** 회사가 어떻게 자금을 조달하고 있는가 (how it finances itself?)
+** 회사가 현금을 얼마나 빨리 만들어 낼수 있는가 (유동성)
+
+== 유동성 (Liquidity) ==
+=== 유동비율 (Current Ratio) ===
+* current-ratio = current-assets/current-liabilities
+* 부도 위험에 대한 1차 판단자료
+* 지나치게 유동성이 많은 것도 바람직하지 않음 -- inefficient use of cash resources, shrinking operations, vulnerability to a takeover attempt by an outside party
+
+=== 당좌비율 (Quick Ratio) ===
+* quick-ratio = (Current-assets - inventory)/current-liabilities
+* aka '''acid-test ratio'''
+
+== 이익창출 (Profitability) ==
+=== Profit Margin ===
+* profit-margin = net-profit/revenue
+* profit margin이 우지 또는 개선된다는 것은 재조원가/operating expense등이 줄어들었다는 것 (경영진의 능력발휘 또는 제조분야가 효율성 개선을 하고 있다는 의미)
+* 또는 gross profit margin도 의미가 있음
+
+=== Return on Equity ===
+* ROE (return-on-equity)= net-profit/shareholders-equity
+
+=== Return on Asset ===
+* return-on-asset = net-profit/total-assets
+
+=== EBITDA Margin ===
+* EBITDA-margin = EBITDA/revenue
+** EBIT (earnings before interest/taxes) = operating-profit
+** DA (depreciation and amortization; 감가상각)
+*** depreciation: physical asset (차량, 장비) 가 시간에 따라 가치를 잃는것
+*** amortization: intangible asset이 시간에 따라 가치를 잃는것
+
+== 자금조달 (Financing and Leverage) ==
+=== Debt-to-Assets ===
+* debt-to-assets = total-debt/total-assets
+
+=== Debt-to-Capitalization ===
+* debt-to-capitalization = debt/(debt+shareholders-equity)
+
+=== Assets-to-Equity ===
+* assets-to-shareholders-equity = assets/shareholders-equity
+
+=== 이자 보상 비율 (Interest Coverage Ratio) ===
+* interest-coverage-ratio = EBIT/interest-expense
+
+== 생산성/효율성 (Productivity and Efficiency) ==
+=== 자산 회전율 (Asset Turnover) ===
+* asset-turnover = revenue/total-assets
+* 회사가 얼마나 효율적으로 자산을 이용해서 revenue를 발생시키는지
+
+=== 재고 회전율 (Inventory Turnover) ===
+* inventory-turnover = COGS/inventory
+* 주어진 해에, 회사가 재고를 몇번이나 완전히 판매하는지
+
+=== 재고자산 회전일 (Days Inventory) ===
+* days-inventory = 365/inventory-turnover
+* 재고자산이 창고에 팔리기 전까지 저장되어있는 기간; 짧을 수록 회전율이 높음
+
+=== Receivables Collection Period ===
+* receivables-collection-period = 365/(sales/receivables)
+* 회사가 sales한 물품/서비스에 대해 cash를 얼마나 빨리 받는지
+
+= 재무지표 =
+== PER (주가수익비율) ==
+* P/E ratio; Price/Earnings Ratio
+* Ratio of a company's stock price to the company's earnings per share (EPS)
+* PER이 높으면 고평가, 낮으면 저평가(?)  사실은 그 반대의 성향; 
+* '''PER''': more growth potential as perceived by investors (성장가능성)
+
+** how much investors are willing to pay per doallar of earnings
+* Sector마다 PER 값들이 꽤 다름
+
+== PBR (주가순자산비율) ==
+* P/B Ratio; Price-to-Book Ratio; Priice-Equity Ratio 
+* [[http://merrow.tistory.com/451]], [[https://www.investopedia.com/terms/p/price-to-bookratio.asp]]
+* PBR = 시가총액/순자산
+** 회사의 자산 = 순자산 + 부채
+* PBR이 높으면 고평가, 낮으면 저평가
+
+== POR ==
+== PCR ==
+== PSR ==
+
+
+= 회사 =
+* [[지주회사 (Holding Company) | http://news.chosun.com/site/data/html_dir/2016/12/05/2016120500502.html]]: 지주회사는 다른 회사주식을 소유해 사업활동을 지배하는 회사; 제조업을 주력으로 하는 일반 지주사와 은행, 보험사를 거느리는 금융지주사로 나뉨; 지주사가 직접 지분을 가지고 지배하는 회사는 자회사, 그 자회사가 지분을 보유한 회사는 손자회사라 함

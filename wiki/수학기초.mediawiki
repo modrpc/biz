@@ -1,0 +1,72 @@
+= 수학기초 =
+* [[Logarithm|https://en.wikipedia.org/wiki/Logarithm]]
+* [[Exponential function|https://en.wikipedia.org/wiki/Exponential_function]]
+* [[Euler's number ''e''|https://en.wikipedia.org/wiki/E_(mathematical_constant)]]
+** [[Compound rate|https://en.wikipedia.org/wiki/Compound_interest]]
+
+= 미적분 =
+* '''[[3blue1brown calculus|https://www.youtube.com/watch?v=WUvTyaaNkzM]]'''
+
+= 선형대수학 =
+* '''[[Gibert Strang MIT lectures|https://www.youtube.com/watch?v=ZK3O402wf1c&list=PL49CF3715CB9EF31D]]'''
+* '''[[3blue1brown linear algebra|https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab]]'''
+
+* 두개의 기본 질문 (2차원을 가정했을때)
+** AX = B  (where A = (1, -2)^t,  X = (x, y)^t, B = (0, 1)^t) 를 만족하는 x가 존재하는가?
+** 모든 X의 값의 range (all x, y values)에 대해 Ax는 2차원 전체를 fill-in 할수 있는가?
+
+= 통계학 =
+* [[통계학|https://namu.wiki/w/%ED%86%B5%EA%B3%84%ED%95%99]]
+* [[위키: 통계학 용어모음|https://ko.wikipedia.org/wiki/%EB%B6%84%EB%A5%98:%ED%86%B5%EA%B3%84%ED%95%99_%EC%9A%A9%EC%96%B4]]
+* [[위키: 통계학 theorems|https://ko.wikipedia.org/wiki/%EB%B6%84%EB%A5%98:%ED%86%B5%EA%B3%84%ED%95%99_%EC%9A%A9%EC%96%B4]]
+* <u>[[데이터사이언스 스쿨|https://datascienceschool.net/]]</u>
+
+== 평균 ==
+* [[산술/기하/조화평균|http://www.statground.org/index.php?mid=FreeArticles&document_srl=1037]]
+** '''산술평균''': additive 값들의 "평균"을 낼 때
+** '''[[기하평균|https://en.wikipedia.org/wiki/Geometric_mean]]''': multiplicative 값들의 "평균"을 낼 때; '비율 (rate) 들의 평균"
+*** 매출이 한대 50% 상승, 다음해 4% 감소했다면, 성장률 평균은 sqrt(1.5*0.96) = 1.2; 즉 연평균 20% 성장률
+** '''제곱평균''': 각 데이터를 제곱하여 더하고 총 갯수로 나눈 후 sqrt를 하는 방법
+*** "데이터"가 오리지널 데이터가 아니라 derived된 값일수 있음; 예를 들어 r.v의 경우 (X-u)가 "데이터 값"이 됨
+*** 표준편차 계산에 사용; (X-u)들의 평균은 0이 되어버리므로 (X-u)^2의 평균을 구한후 sqrt
+** '''조화평균''': 갈때는 시속 x km/h, 올때는 시속 y km/h로 이동했다면 평균 시속 몇 km/h로 이동한것이되는가? 의 계산
+*** 편도 1km라 한다면, 갈때 드는 시간은 1/x; 돌아올때 드는 시간은 1/y
+*** 왕복 2 km에 1/x + 1/y의 시간이 드는 세미 되므로 평균 시속은 2/(1/x+1/y)
+
+== 공분산 ==
+* [[공분산과 상관계수|https://datascienceschool.net/view-notebook/4cab41c0d9cd4eafaff8a45f590592c5/]]
+
+== 중심극한정리 ==
+* [[Central Limit Theorem|https://ko.wikipedia.org/wiki/%EC%A4%91%EC%8B%AC_%EA%B7%B9%ED%95%9C_%EC%A0%95%EB%A6%AC]]
+* [[대수의 법칙|https://namu.wiki/w/%ED%81%B0%20%EC%88%98%EC%9D%98%20%EB%B2%95%EC%B9%99]] ([[위키|https://ko.wikipedia.org/wiki/%ED%81%B0_%EC%88%98%EC%9D%98_%EB%B2%95%EC%B9%99]])
+
+= 확률론 =
+* [[위키: 확률론 theorems|https://ko.wikipedia.org/wiki/%EB%B6%84%EB%A5%98:%ED%99%95%EB%A5%A0%EB%A1%A0_%EC%A0%95%EB%A6%AC]]
+
+== Discrete distributions ==
+* [[discrete uniform distribution|https://en.wikipedia.org/wiki/Discrete_uniform_distribution]]
+* [[hypergeometric distribution|https://en.wikipedia.org/wiki/Hypergeometric_distribution]]
+* [[binomial distribution|https://en.wikipedia.org/wiki/Binomial_distribution]]
+* [[negative binomial distribution|https://en.wikipedia.org/wiki/Negative_binomial_distribution]]
+* [[geometric distribution|https://en.wikipedia.org/wiki/Geometric_distribution]]
+* [[poisson distribution|https://en.wikipedia.org/wiki/Poisson_distribution]]
+
+== Continuous distributions ==
+* [[continous uniform distribution|http://mathworld.wolfram.com/UniformDistribution.html]]
+* [[normal distribution|https://en.wikipedia.org/wiki/Normal_distribution]]
+* [[chi-squared distribution|https://en.wikipedia.org/wiki/Chi-squared_distribution]]
+
+== Random walks ==
+* [[Random walk|https://en.wikipedia.org/wiki/Random_walk]]
+
+== Kelly Criterion ==
+* [[Kelly criterion|https://en.wikipedia.org/wiki/Kelly_criterion]]
+
+= 시계열분석 =
+* [[나무위키|https://namu.wiki/w/%EC%8B%9C%EA%B3%84%EC%97%B4%20%EB%B6%84%EC%84%9D]]
+
+= 게임 이론 =
+* [[wikipedia|https://en.wikipedia.org/wiki/Game_theory]]
+** [[위키|https://ko.wikipedia.org/wiki/%EA%B2%8C%EC%9E%84_%EC%9D%B4%EB%A1%A0]]
+* [[죄수의 딜레마|https://ko.wikipedia.org/wiki/%EC%A3%84%EC%88%98%EC%9D%98_%EB%94%9C%EB%A0%88%EB%A7%88]]
+* [[Tit for tat|https://namu.wiki/w/%ED%8C%83%ED%8F%AC%ED%83%AF]]

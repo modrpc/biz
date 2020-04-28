@@ -1,0 +1,99 @@
+= 일상 =
+
+== 매일 할 일 ==
+* 외국어 공부
+** 영어/[[일본어]]/프랑스어/이탈리아어 공부
+
+* 역사공부
+** [[https://namu.wiki/w/%EB%A8%BC%EB%82%98%EB%9D%BC%20%EC%9D%B4%EC%9B%83%EB%82%98%EB%9D%BC|이원복 먼나라 이웃나라 읽을것]]
+
+* 경제공부
+** Mankiw의 책 읽을것
+** Vanguard/Fidelity/Schwab 검토
+** CNBC 볼것
+
+= 영화 =
+* [[시네필 안내서|https://namu.wiki/w/%EC%8B%9C%EB%84%A4%ED%95%84%20%EC%95%88%EB%82%B4%EC%84%9C]]
+* [[죽기 전에 꼭 봐야할 1001개의 영화 |https://namu.wiki/w/%EC%A3%BD%EA%B8%B0%20%EC%A0%84%EC%97%90%20%EA%BC%AD%20%EB%B4%90%EC%95%BC%20%ED%95%A0%20%EC%98%81%ED%99%94%201001]]
+
+= 음악 =
+* [[재즈와 고전음악 blog| http://blog.daum.net/01193744757/91]]
+* [[까칠한 클리식|http://www.kkacl.com]]
+* <u>'''[[쇼난 비치 FM|https://www.beachfm.co.jp/]]'''</u>
+* <u>'''[[KCSM|https://kcsm.org/]]'''</u>: Bay Area Jazz 91.1Mhz
+* <u>'''[[KDFC|https://www.kdfc.com/]]'''</u>: Bay Area Classical Music 104.9Mhz
+* [[이노우에 요스이|https://m.blog.naver.com/magicsoup79/221287325743]]
+* [[요시다 타쿠로|http://blog.daum.net/_blog/BlogTypeView.do?blogid=0VZTl&articleno=485&categoryId=2&regdt=20170829103248]]
+
+== 오디오 ==
+* [[풀레인지|http://www.fullrange.kr]]
+* [[Audiophile Resource Guide|http://www.reviewlab.com/audiophile-guide/]]
+
+= 사진 =
+== Basics ==
+[[https://github.com/modrpc/info/blob/master/pics/camera-exposure.jpg]]
+* [[노출을 조절하는 세가지 요소|https://www.cambridgeincolour.com/tutorials/camera-exposure.htm]]: 조리개 크기 (aperture size), 셔터 속도 (shutter speed), ISO 감도 (ISO film speed) [[https://it.donga.com/13706/]]
+* [[조리개 크기|https://namu.wiki/w/%EC%A1%B0%EB%A6%AC%EA%B0%9C]]: 렌즈를 통해 들어오는 빛의 양을 조절
+** [[aperture|https://www.nikonusa.com/en/learn-and-explore/a/tips-and-techniques/understanding-maximum-aperture.html#]]
+** aka F-stop; f/1.4 또는 F1.4 또는 1:1.4 등으로 표기
+** 피사계 심도 (촛점이 맞는 범위) 가 조절됨; 조리개 값이 낮을수록, 초점거리가 길수록 얕은 심도
+* [[셔터 속도|https://namu.wiki/w/%EC%85%94%ED%84%B0%20%EC%86%8D%EB%8F%84]]
+** [[위키|https://ko.wikipedia.org/wiki/%EC%85%94%ED%84%B0_%EC%86%8D%EB%8F%84]]
+** [[Sony: 셔터 속도|https://www.sony.co.kr/electronics/support/articles/S500079625]]
+* [[ISO 감도|https://namu.wiki/w/%EA%B0%90%EB%8F%84(%EC%82%AC%EC%A7%84)]]: 감광면의 빛에 대한 민감성; '''낮을수록 노이즈가 적고, 높을수록 흔들림에 강하다'''
+** [[https://brunch.co.kr/@brunchqxk5/58]]
+
+== Fujifilm X-E3 ==
+{|  class="wikitable"
+| 모드 
+| 자동모드 selector (*, auto)
+| 셔터속드 (상단, 4000, ...4, T, B, A)
+| 초점모드 (M C S)
+| 조리개 (렌즈 A, 32 .., 2) 
+|-
+| P (프로그램 AE) 
+| *   
+| A
+| S (single AF)
+| A 
+|-
+| S (셔터 우선 AE)
+|  
+| 직접선택
+| S
+| A 
+|-
+| A (조리개 우선 모드)
+|  
+| A  
+| S 
+| 직접선택
+|}
+
+== Food Photography ==
+** [[Lighting Products|https://fujilove.com/food-photography-on-fujifilm-x-lighting-instant-noodles/]]
+** [[Adorama xe-1 w/ 35mm lens|https://www.adorama.com/alc/0014319/article/New-Tools-At-Work-Fantastic-Food-Photography-with-the-Fujifilm-XE-1]]
+
+= 운동 =
+* 유달산 등반
+* Gym/Sauna
+
+= 항해 =
+* [[블루마린 요트|http://blue-marine.co.kr/main/bbs/board.php?bo_table=used_yacht]]
+* [[우리선박매매|http://www.wooriboat.com]]
+* Google-search "yacht sale"
+
+== 요트 ==
+* 한국
+** [[요트여행 기사|http://www.koreadaily.com/news/read.asp?art_id=3611613]]
+** [[목포 요트 마리나|http://www.mokpo-marina.com/]]
+** [[입문|http://www.myseastory.com/home/c1be1.htm]]
+
+* California
+** [[CA boating law & regulation|https://www.boat-ed.com/california/boating_law.html]]
+
+= 목표 =
+== CS 책 집필 ==
+* [[저술]]: CS principles
+
+== iPhone/Android App ==

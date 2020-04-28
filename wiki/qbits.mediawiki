@@ -1,0 +1,3 @@
+= System Components =
+== Database: MySQL ==
+* SHELL: <code>mysql -p -u root (passwd: a-pass)</code>
