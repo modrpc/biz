@@ -46,7 +46,7 @@ for xlsf in glob.glob("*.xls"):
 
 acct = Account()
 data = None
-for csvf in glob.glob("*.csv"):
+for csvf in glob.glob("*2020-03.csv"):
 	with open(csvf, 'r') as csvfile:
 		csvrd = csv.reader(csvfile, delimiter=',')
 		for row in csvrd:
@@ -61,3 +61,4 @@ for csvf in glob.glob("*.csv"):
 				acct.deposit(dt, typ, who, deposit)
 			print("%s %s with=%d dep=%d"%(typ, who, withdraw, deposit))
 			print(acct.balance())
+			
