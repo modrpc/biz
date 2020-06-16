@@ -1,11 +1,11 @@
 #!/opt/anaconda3/bin/python3
 
 import sys
-import pandas as pd
 import glob, os
 import csv
 import datetime
-from datetime import date
+import numpy as np
+import pandas as pd
 
 
 class DataStore:
@@ -25,7 +25,6 @@ class Data:
 	def __init__(self, datestr):
 		self.datastr = datestr
 		self.date = date.fromisoformat(datestr)
-		print(self.W[self.date.weekday()])
 		
 	def add(self, item, count):
 		self.D[item] = count
@@ -36,50 +35,52 @@ class Data:
 datastore = DataStore()
 data = None
 
+# @return list of paths of csv files
 def build_csv(dir):
-	for xlsf in glob.glob(dir + "*"):
+	csvfs = []
+	for xlsf in glob.glob(dir + "/*.xls"):
 		csvf = xlsf.replace(".xls", ".csv")
+		print(xlsf)
+		csvfs.append(csvf)
 		if (os.path.exists(csvf)):
-			print(csvf)
+			continue
 		else:
 			xls = pd.read_excel(xlsf)
 			xls.to_csv(csvf)
 			print("%s converted to %s"%(xlsf, csvf))
+	return csvfs
 
 
-def build_dates(dir):
-	for csvf in glob.glob(dir + "/*.csv"):
+def build_db(csvfs):
+	dateL = []
+	salesL = []
+	for csvf in csvfs:
 		with open(csvf, 'r') as csvfile:
+			sales = []
+			date = None
+			rowcnt = 0
 			csvrd = csv.reader(csvfile, delimiter=',')
 			datestr = csvf.replace("/06", "").replace(".csv", "")
-			data = Data(datestr)
-			rowcnt = 0
+			print(datestr)
+			date = datetime.date.fromisoformat(datestr)
+			dateL.append(date)
 			for row in csvrd:
 				rowcnt = rowcnt + 1
 				if (rowcnt < 4): continue
 				if (row[2] == "합  계"): continue
-				
-				print("[" + row[2] + "]", row[4])
-				data.add(row[2], int(row[4].replace(',', '')))
-
-def build_data(dir):
-	for csvf in glob.glob("2020-06/*.csv"):
-		with open(csvf, 'r') as csvfile:
-			csvrd = csv.reader(csvfile, delimiter=',')
-			datestr = csvf.replace("/06", "").replace(".csv", "")
-			data = Data(datestr)
-			rowcnt = 0
-			for row in csvrd:
-				rowcnt = rowcnt + 1
-				if (rowcnt < 4): continue
-				if (row[2] == "합  계"): continue
-				
-				print("[" + row[2] + "]", row[4])
-				data.add(row[2], int(row[4].replace(',', '')))
+				sales.append([row[2], int(row[4].replace(',', ''))])
+			salesL.append(sales)
+	return (dateL, salesL)
+					
 
 def run(dir):
-	build_csv(dir)
-	build_dates(dir)
+	csvfs = build_csv(dir)
+	(dateL, salesL) = build_db(csvfs)
+	print(dateL)
+	print(salesL[0])
+	dateNDA = np.array(dateL)
+	salesNDA = np.array(salesL)
+	print(salesNDA(dateNDA == datetime.date("2020-06-01")))
 
 if __name__ == "__main__":
 	if (len(sys.argv) < 2):
