@@ -44,11 +44,12 @@ for xlsf in glob.glob("2020-06/*"):
 
 datastore = DataStore()
 data = None
+
+# build dates
 for csvf in glob.glob("2020-06/*.csv"):
 	with open(csvf, 'r') as csvfile:
 		csvrd = csv.reader(csvfile, delimiter=',')
 		datestr = csvf.replace("/06", "").replace(".csv", "")
-		print(datestr)
 		data = Data(datestr)
 		rowcnt = 0
 		for row in csvrd:
