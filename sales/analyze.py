@@ -1,9 +1,9 @@
 #!/opt/anaconda3/bin/python3
 
 import sys
-import glob, os
+import os
+import glob
 import csv
-import datetime
 import numpy as np
 import pandas as pd
 
@@ -51,7 +51,9 @@ def build_csv(dir):
 	return csvfs
 
 
-def build_db(csvfs):
+
+
+def build_date_sales_lists(csvfs):
 	dateL = []
 	salesL = []
 	for csvf in csvfs:
@@ -59,28 +61,42 @@ def build_db(csvfs):
 			sales = []
 			date = None
 			rowcnt = 0
+
 			csvrd = csv.reader(csvfile, delimiter=',')
 			datestr = csvf.replace("/06", "").replace(".csv", "")
-			print(datestr)
-			date = datetime.date.fromisoformat(datestr)
+			date = pd.to_datetime(datestr)
 			dateL.append(date)
+
 			for row in csvrd:
 				rowcnt = rowcnt + 1
 				if (rowcnt < 4): continue
 				if (row[2] == "합  계"): continue
 				sales.append([row[2], int(row[4].replace(',', ''))])
 			salesL.append(sales)
+
 	return (dateL, salesL)
-					
+
+
+def is_weekday(pdt):
+	return pdt.day_name() in ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
+
+def is_weekend(pdt):
+	return pdt.day_name() in ['Saturday', 'Sunday']
 
 def run(dir):
 	csvfs = build_csv(dir)
-	(dateL, salesL) = build_db(csvfs)
-	print(dateL)
-	print(salesL[0])
-	dateNDA = np.array(dateL)
-	salesNDA = np.array(salesL)
-	print(salesNDA(dateNDA == datetime.date("2020-06-01")))
+	(dateL, salesL) = build_date_sales_lists(csvfs)
+	dateNDA = pd.DataFrame(dateL)
+	salesNDA = pd.DataFrame(salesL)
+
+	print(dateNDA)
+
+	d61 = pd.to_datetime("2020-06-01")
+	#print(d61.day_name())
+	#print(salesNDA[dateNDA == d61])
+
+	#for sales in salesL:
+	#print(sales['단팥빵'])
 
 if __name__ == "__main__":
 	if (len(sys.argv) < 2):
