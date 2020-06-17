@@ -8,33 +8,6 @@ import numpy as np
 import pandas as pd
 
 
-class DataStore:
-	D = dict()
-	def __init__(self):
-		None
-
-	def add(self, datestr, data):
-		print(data)
-		self.D[datestr] = data
-
-
-class Data:
-	W = ['월', '화', '수', '목', '금', '토', '일']
-	D = dict()
-
-	def __init__(self, datestr):
-		self.datastr = datestr
-		self.date = date.fromisoformat(datestr)
-		
-	def add(self, item, count):
-		self.D[item] = count
-
-	def print(self):
-		print("Data (%s %s)"%(self.date, self.W[self.date.weekday()]))
-
-datastore = DataStore()
-data = None
-
 # @return list of paths of csv files
 def build_csv(dir):
 	csvfs = []
@@ -50,10 +23,16 @@ def build_csv(dir):
 			print("%s converted to %s"%(xlsf, csvf))
 	return csvfs
 
+def build_item_list(salesL):
+	itemD = {}
+	for sales in salesL:
+		for item in sales:
+			if item[0] in itemD:
+				continue
+			itemD[item[0]] = 0
+			print(item[0])
 
-
-
-def build_date_sales_lists(csvfs):
+def build_sales_list(csvfs):
 	dateL = []
 	salesL = []
 	for csvf in csvfs:
@@ -76,7 +55,6 @@ def build_date_sales_lists(csvfs):
 
 	return (dateL, salesL)
 
-
 def is_weekday(pdt):
 	return pdt.day_name() in ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
 
@@ -85,7 +63,8 @@ def is_weekend(pdt):
 
 def run(dir):
 	csvfs = build_csv(dir)
-	(dateL, salesL) = build_date_sales_lists(csvfs)
+	(dateL, salesL) = build_sales_list(csvfs)
+	build_item_list(salesL)
 	dateNDA = pd.DataFrame(dateL)
 	salesNDA = pd.DataFrame(salesL)
 
