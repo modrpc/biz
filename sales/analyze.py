@@ -7,6 +7,31 @@ import csv
 import numpy as np
 import pandas as pd
 
+class Items:
+	def __init__(self):
+		self.dict = {}
+		self.sorted = False
+		self.sorted_list = None
+
+	def add(self, item):
+		if item in self.dict:
+			return
+		self.dict[item] = 0
+
+	def list(self):
+		if not sorted:
+			self.sorted_list = sorted(self.dict.keys())
+			nitems = 0
+			for item in sorted_list:
+				self.dict[item] = nitems
+				nitems = nitems + 1
+		return self.sorted_list
+
+	def size(self):
+		return len(self.list())
+
+
+items = Items()
 
 def build_csv_paths(dir):
 	csvpaths = []
@@ -21,9 +46,22 @@ def build_csv_paths(dir):
 			print('%s converted to %s'%(xlspath, csvpath))
 	return csvpaths
 
+def build_sorted_item_list(salesL):
+	itemD = {}
+	for sales in salesL:
+		for item in sales:
+			if item[0] in itemD:
+				continue
+			itemD[item[0]] = 0
+			print(item[0])
+
+def build_sales_data(items)
+
 def build_sales_dataframe(csvpaths):
+	global items
 	datesL = []
 	salesL = []
+	itemsL = []
 	for csvpath in csvpaths:
 		with open(csvpath, 'r') as csvfile:
 			salesD = {}
@@ -37,11 +75,12 @@ def build_sales_dataframe(csvpaths):
 				if nrow < 4 or row[2] == '합  계': continue
 				
 				salesD[row[2]] = int(row[4])
+				items.add(row[2])
 			salesDF = pd.DataFrame(pd.Series(salesD))
 			salesL.append(salesDF)
 
 	dateIdx = pd.to_datetime(datesL)
-	return pd.DataFrame(data=salesL, index=dateIdx)
+	return pd.DataFrame(data=salesL, index=dateIdx, columns=items.list())
 
 def is_weekday(pdt):
 	return pdt.day_name() in ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
