@@ -8,52 +8,40 @@ import numpy as np
 import pandas as pd
 
 
-# @return list of paths of csv files
-def build_csv(dir):
-	csvfs = []
-	for xlsf in glob.glob(dir + "/*.xls"):
-		csvf = xlsf.replace(".xls", ".csv")
-		print(xlsf)
-		csvfs.append(csvf)
-		if (os.path.exists(csvf)):
+def build_csv_paths(dir):
+	csvpaths = []
+	for xlspath in glob.glob(dir + '/*.xls'):
+		csvpath = xlspath.replace('.xls', '.csv')
+		csvpaths.append(csvpath)
+		if (os.path.exists(csvpath)):
 			continue
 		else:
-			xls = pd.read_excel(xlsf)
-			xls.to_csv(csvf)
-			print("%s converted to %s"%(xlsf, csvf))
-	return csvfs
+			xls = pd.read_excel(xlspath)
+			xls.to_csv(csvpath)
+			print('%s converted to %s'%(xlspath, csvpath))
+	return csvpaths
 
-def build_item_list(salesL):
-	itemD = {}
-	for sales in salesL:
-		for item in sales:
-			if item[0] in itemD:
-				continue
-			itemD[item[0]] = 0
-			print(item[0])
-
-def build_sales_list(csvfs):
-	dateL = []
+def build_sales_dataframe(csvpaths):
+	datesL = []
 	salesL = []
-	for csvf in csvfs:
-		with open(csvf, 'r') as csvfile:
-			sales = []
-			date = None
-			rowcnt = 0
+	for csvpath in csvpaths:
+		with open(csvpath, 'r') as csvfile:
+			salesD = {}
+			nrow = 0
 
 			csvrd = csv.reader(csvfile, delimiter=',')
-			datestr = csvf.replace("/06", "").replace(".csv", "")
-			date = pd.to_datetime(datestr)
-			dateL.append(date)
+			datesL.append(csvpath.replace('/06', '').replace('.csv', ''))
 
 			for row in csvrd:
-				rowcnt = rowcnt + 1
-				if (rowcnt < 4): continue
-				if (row[2] == "합  계"): continue
-				sales.append([row[2], int(row[4].replace(',', ''))])
-			salesL.append(sales)
+				nrow = nrow + 1
+				if nrow < 4 or row[2] == '합  계': continue
+				
+				salesD[row[2]] = int(row[4])
+			salesDF = pd.DataFrame(pd.Series(salesD))
+			salesL.append(salesDF)
 
-	return (dateL, salesL)
+	dateIdx = pd.to_datetime(datesL)
+	return pd.DataFrame(data=salesL, index=dateIdx)
 
 def is_weekday(pdt):
 	return pdt.day_name() in ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
@@ -62,23 +50,16 @@ def is_weekend(pdt):
 	return pdt.day_name() in ['Saturday', 'Sunday']
 
 def run(dir):
-	csvfs = build_csv(dir)
-	(dateL, salesL) = build_sales_list(csvfs)
-	build_item_list(salesL)
-	dateNDA = pd.DataFrame(dateL)
-	salesNDA = pd.DataFrame(salesL)
+	csvpaths = build_csv_paths(dir)
+	salesDF = build_sales_dataframe(csvpaths)
 
-	print(dateNDA)
+	print(salesDF.index)
+	print(salesDF.columns)
+	print(salesDF['단팥빵'])
+	#print(salesDF[pd.to_datetime('2020-06-01')]['단팥빵'])
 
-	d61 = pd.to_datetime("2020-06-01")
-	#print(d61.day_name())
-	#print(salesNDA[dateNDA == d61])
-
-	#for sales in salesL:
-	#print(sales['단팥빵'])
-
-if __name__ == "__main__":
+if __name__ == '__main__':
 	if (len(sys.argv) < 2):
-		print("Usage: " + sys.argv[0] + " <dir>")
+		print('Usage: ' + sys.argv[0] + ' <dir>')
 		quit()
 	run(sys.argv[1])
