@@ -80,18 +80,19 @@ def build_sales_dataframe(csvpaths):
 				items.add(row[2])
 
 	for csvpath in csvpaths:
+		print(csvpath)
 		with open(csvpath, 'r') as csvfile:
 			salesL = []
 			csvrd = csv.reader(csvfile, delimiter=',')
 			for row in csvrd:
 				if (items.is_valid(row[2])):
 					salesL.append([row[2], row[4]])
+					print(row)
+					print(row[2], row[4])
 			lst = build_sales_list(salesL)
-			print(lst)
 			salesData.append(lst)
 
 	dateIdx = pd.to_datetime(datesL)
-	print(salesData)
 	return pd.DataFrame(data=salesData, index=dateIdx, columns=items.list())
 
 def is_weekday(pdt):
@@ -100,14 +101,12 @@ def is_weekday(pdt):
 def is_weekend(pdt):
 	return pdt.day_name() in ['Saturday', 'Sunday']
 
+salesDF = None
 def run(dir):
+	global salesDF
 	csvpaths = build_csv_paths(dir)
 	salesDF = build_sales_dataframe(csvpaths)
-
-	#print(salesDF.index)
-	#print(salesDF.columns)
-	#print(salesDF['단팥빵'])
-	#print(salesDF[pd.to_datetime('2020-06-01')]['단팥빵'])
+	print(salesDF)
 
 if __name__ == '__main__':
 	if (len(sys.argv) < 2):
