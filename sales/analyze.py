@@ -28,7 +28,7 @@ class Items:
 			self.sorted_list = sorted(self.dict.keys())
 			nitems = 0
 			for item in self.sorted_list:
-				self.dict[ltem] = nitems
+				self.dict[item] = nitems
 				nitems = nitems + 1
 		return self.sorted_list
 
