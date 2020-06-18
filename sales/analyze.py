@@ -7,6 +7,21 @@ import csv
 import numpy as np
 import pandas as pd
 
+
+class Dates:
+	def __init__(self):
+		self.dict = {}
+		self.sorted_list = []
+
+	def add(self, date):
+		if date in self.dict:
+			return
+		self.dict[date] = 0
+		self.sorted_list.append(date)
+
+	def list(self):
+		return self.sorted_list
+
 class Items:
 	def __init__(self):
 		self.dict = {}
@@ -39,19 +54,21 @@ class Items:
 		return self.dict[name]
 
 
+dates = Dates()
 items = Items()
 
 def build_csv_paths(dir):
 	csvpaths = []
-	for xlspath in glob.glob(dir + '/*.xls'):
-		csvpath = xlspath.replace('.xls', '.csv')
-		csvpaths.append(csvpath)
-		if (os.path.exists(csvpath)):
-			continue
-		else:
-			xls = pd.read_excel(xlspath)
-			xls.to_csv(csvpath)
-			print('%s converted to %s'%(xlspath, csvpath))
+	for idx in ['01', '02']:
+		for xlspath in glob.glob(dir + '/' + idx + '/*.xls'):
+			csvpath = xlspath.replace('.xls', '.csv')
+			csvpaths.append(csvpath)
+			if (os.path.exists(csvpath)):
+				continue
+			else:
+				xls = pd.read_excel(xlspath)
+				xls.to_csv(csvpath)
+				print('%s converted to %s'%(xlspath, csvpath))
 	return csvpaths
 
 def build_sales_list(sales):
@@ -62,21 +79,25 @@ def build_sales_list(sales):
 	
 
 def build_sales_dataframe(csvpaths):
+	global dates
 	global items
-	datesL = []
-	itemsL = []
 	salesData = []
+
+	# 1) build Items object, which contains all items sold 
+	# 2) build the list of dates
 	for csvpath in csvpaths:
 		with open(csvpath, 'r') as csvfile:
 			nrow = 0
 			csvrd = csv.reader(csvfile, delimiter=',')
-			datesL.append(csvpath.replace('/06', '').replace('.csv', ''))
-
+			strs = csvpath.split('/')
+			date = strs[1] + strs[3].replace('06', '').replace('.csv', '')
+			dates.add(date)
 			for row in csvrd:
 				nrow = nrow + 1
 				if nrow < 4 or row[2] == '합  계': continue
 				items.add(row[2])
 
+	# build sales matrix (row: date, column: normalized, sorted items)
 	for csvpath in csvpaths:
 		print(csvpath)
 		with open(csvpath, 'r') as csvfile:
@@ -90,7 +111,7 @@ def build_sales_dataframe(csvpaths):
 			lst = build_sales_list(salesL)
 			salesData.append(lst)
 
-	dateIdx = pd.to_datetime(datesL)
+	dateIdx = pd.to_datetime(dates.list())
 	return pd.DataFrame(data=salesData, index=dateIdx, columns=items.list())
 
 def is_weekday(pdt):
@@ -100,6 +121,7 @@ def is_weekend(pdt):
 	return pdt.day_name() in ['Saturday', 'Sunday']
 
 salesDF = None
+
 def run(dir):
 	global salesDF
 	csvpaths = build_csv_paths(dir)
