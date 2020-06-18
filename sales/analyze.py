@@ -10,7 +10,6 @@ import pandas as pd
 class Items:
 	def __init__(self):
 		self.dict = {}
-		self.sorted = False
 		self.sorted_list = None
 
 	def add(self, item):
@@ -25,13 +24,12 @@ class Items:
 			return False
 
 	def list(self):
-		if not self.sorted:
+		if self.sorted_list == None:
 			self.sorted_list = sorted(self.dict.keys())
 			nitems = 0
 			for item in self.sorted_list:
 				self.dict[item] = nitems
 				nitems = nitems + 1
-			self.sorted = True
 		return self.sorted_list
 
 	def size(self):
