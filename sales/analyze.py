@@ -27,6 +27,9 @@ class Dates:
 				ndates = ndates + 1
 		return self.sorted_list
 
+	def size(self):
+		return len(self.sorted_list)
+
 	def date_index(self, date):
 		return self.dict[date]
 
@@ -72,16 +75,19 @@ class SalesData:
 		if date not in self.dict.keys():
 			self.dict[date] = sales
 		else:
-			self.dict[date] = numpy.add(self.dict[date], sales)
+			self.dict[date] = np.add(self.dict[date], sales)
 
 	def data(self):
-		lst = []
-		
-		return 
+		lst = [None for _ in range(self.dates.size())]
+		for date in self.dict.keys():
+			lst[self.dates.date_index(date)] = self.dict[date]
+			
+		return lst
 
 		
 dates = Dates()
 items = Items()
+sales = SalesData(dates, items)
 
 def build_csv_paths(dir):
 	csvpaths = []
@@ -137,10 +143,10 @@ def build_sales_dataframe(csvpaths):
 				if (items.is_valid(row[2])):
 					salesL.append([row[2], row[4]])
 			lst = build_sales_list(salesL)
-			salesData.append(lst)
+			sales.add(date, lst)
 
 	dateIdx = pd.to_datetime(dates.list())
-	return pd.DataFrame(data=salesData, index=dateIdx, columns=items.list())
+	return pd.DataFrame(data=sales.data(), index=dateIdx, columns=items.list())
 
 def is_weekday(pdt):
 	return pdt.day_name() in ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
