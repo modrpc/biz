@@ -68,31 +68,17 @@ class SalesData:
 		self.items = items
 		self.sorted_list = None
 
-	def add(self, date, list):
-		if item in self.dict:
-			return
-		self.dict[item] = 0
-
-	def is_valid(self, item):
-		if item in self.dict:
-			return True
+	def add(self, date, sales):
+		if date not in self.dict.keys():
+			self.dict[date] = sales
 		else:
-			return False
+			self.dict[date] = numpy.add(self.dict[date], sales)
 
-	def list(self):
-		if self.sorted_list == None:
-			self.sorted_list = sorted(self.dict.keys())
-			nitems = 0
-			for item in self.sorted_list:
-				self.dict[item] = nitems
-				nitems = nitems + 1
-		return self.sorted_list
+	def data(self):
+		lst = []
+		
+		return 
 
-	def size(self):
-		return len(self.list())
-
-	def item_index(self, name):
-		return self.dict[name]
 		
 dates = Dates()
 items = Items()
