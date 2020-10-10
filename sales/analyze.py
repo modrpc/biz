@@ -1,5 +1,3 @@
-#!/opt/anaconda3/bin/python3
-
 import sys
 import os
 import glob
