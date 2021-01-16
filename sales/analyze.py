@@ -5,7 +5,15 @@ import csv
 import numpy as np
 import pandas as pd
 
-
+# DB store for sales data
+class DataDB:
+    def __init__(self, data_dir):
+        self.data_dir = data_dir
+    
+    def build_db(self):
+        
+    
+    
 class Dates:
 	def __init__(self):
 		self.dict = {}
@@ -87,18 +95,13 @@ dates = Dates()
 items = Items()
 sales = SalesData(dates, items)
 
+
+# build a list of CSV files from DATA_DIR
+DATA_DIR = 'data'
 def build_csv_paths(dir):
 	csvpaths = []
-	for idx in ['01', '02']:
-		for xlspath in glob.glob(dir + '/' + idx + '/*.xls'):
-			csvpath = xlspath.replace('.xls', '.csv')
-			csvpaths.append(csvpath)
-			if (os.path.exists(csvpath)):
-				continue
-			else:
-				xls = pd.read_excel(xlspath)
-				xls.to_csv(csvpath)
-				print('%s converted to %s'%(xlspath, csvpath))
+	for csvpath in glob.glob(DATA_DIR + '/*.csv'):
+		csvpaths.append(csvpath)
 	return csvpaths
 
 def build_sales_list(sales):
@@ -159,6 +162,15 @@ def run(dir):
 	csvpaths = build_csv_paths(dir)
 	salesDF = build_sales_dataframe(csvpaths)
 	print(salesDF)
+
+
+def read_data_files():
+    global DATA_DIR
+        
+    
+def main():
+    datafiles = read_data_files()
+    
 
 if __name__ == '__main__':
 	if (len(sys.argv) < 2):
