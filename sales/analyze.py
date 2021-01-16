@@ -1,10 +1,7 @@
 import sys
-import os
-import glob
-import csv
-import numpy as np
 import pandas as pd
 
+<<<<<<< HEAD
 # DB store for sales data
 class DataDB:
     def __init__(self, data_dir):
@@ -162,6 +159,16 @@ def run(dir):
 	csvpaths = build_csv_paths(dir)
 	salesDF = build_sales_dataframe(csvpaths)
 	print(salesDF)
+=======
+import pathlib
+
+
+def run(file):
+    datadir = pathlib.Path('data/')
+    path = datadir / (file + '.xlsx')
+    df = pd.read_excel(path)
+    print(df)
+>>>>>>> 506e1411f33e9c302d7200b6a8b89e30c64e249c
 
 
 def read_data_files():
@@ -173,7 +180,8 @@ def main():
     
 
 if __name__ == '__main__':
-	if (len(sys.argv) < 2):
-		print('Usage: ' + sys.argv[0] + ' <dir>')
-		quit()
-	run(sys.argv[1])
+    print(os.getcwd())
+    if (len(sys.argv) < 2):
+        print('Usage: ' + sys.argv[0] + ' <filename>')
+        sys.exit()
+    run(sys.argv[1])
