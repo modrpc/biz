@@ -58,8 +58,6 @@
 * [[브래댄코 Breadn& Co.|http://www.breadnco.kr]]
 * [[에그드랍|http://www.eggdrop.co.kr/]]
 
-
-
 = 대만/홍콩 =
 * [[Keewah Bakery|https://keewah.us/]]
 ** [[https://en.wikipedia.org/wiki/Kee_Wah_Bakery]]
@@ -71,7 +69,11 @@
 *** milk, '''soy''', wheat
 * <u>패이스트리에 속을 넣은 빵들이 식감이 괜찮음</u>
 ** <u>'''앙금 페이스트리, 커스터드 페이스트리, 생크림 페이스트리'''</u>
-* 딤섬 디저트 빵 (소보로 + 앙꼬 + 모찌)
+* 딤섬 디저트 빵 
+** 소보로 + 앙꼬 + 모찌
+** 奶黄包 (ni wang bao): 
+** 流沙包 (liu sha bao): 
+*** [[https://www.youtube.com/watch?v=FjOhJ2rLk_U]]
 * <u>[[Taiwanese Boroh|https://www.google.com/search?q=taiwanese+boroh&rlz=1C1CHBD_en&oq=taiwanese+boroh&aqs=chrome..69i57j69i61j0l2.4495j0j7&sourceid=chrome&ie=UTF-8]]</u>: '''파인애플 빵''' -- 한국 소보로와 달리 촉촉함
 ** [[wiki|https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%83%8B%E3%83%B3%E3%82%B0]]
 ** 쇼트닝을 사용하게 되면 트랜스 지방산 -- 대체재료 구상
